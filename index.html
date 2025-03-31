@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amuma-PSK | Coming Soon</title>
+    <meta name="description" content="Amuma-PSK is dedicated to providing educational opportunities for underprivileged children. Our website is coming soon.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #E4C01C;
+            --secondary: #6CB243;
+            --dark: #333333;
+            --light: #FFFFFF;
+            --gray: #F5F5F5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: linear-gradient(135deg, rgba(228, 192, 28, 0.05) 0%, rgba(108, 178, 67, 0.05) 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+        
+        .coming-soon {
+            background-color: var(--light);
+            border-radius: 20px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .logo {
+            margin-bottom: 2rem;
+        }
+        
+        .logo-text {
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .logo-tagline {
+            font-size: 1rem;
+            color: var(--secondary);
+        }
+        
+        .coming-soon h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+        }
+        
+        .coming-soon p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+            gap: 2rem;
+        }
+        
+        .countdown-item {
+            background-color: var(--primary);
+            color: var(--dark);
+            border-radius: 15px;
+            padding: 1.5rem;
+            min-width: 120px;
+            box-shadow: 0 5px 15px rgba(228, 192, 28, 0.3);
+        }
+        
+        .countdown-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+        }
+        
+        .countdown-text {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+        
+        .email-form {
+            max-width: 500px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .email-input {
+            width: 100%;
+            padding: 1.2rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid #e0e0e0;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        
+        .email-input:focus {
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(108, 178, 67, 0.2);
+        }
+        
+        .submit-btn {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            bottom: 5px;
+            padding: 0 1.5rem;
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background-color: #5ba338;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--gray);
+            color: var(--dark);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background-color: var(--primary);
+            color: var(--dark);
+            transform: translateY(-3px);
+        }
+        
+        .contact-info {
+            font-size: 0.9rem;
+            color: #777;
+        }
+        
+        .contact-info a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .decoration {
+            position: absolute;
+            z-index: -1;
+        }
+        
+        .decoration-1 {
+            top: -30px;
+            left: -30px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgba(228, 192, 28, 0.1);
+        }
+        
+        .decoration-2 {
+            bottom: -40px;
+            right: -40px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgba(108, 178, 67, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .coming-soon h1 {
+                font-size: 2.5rem;
+            }
+            
+            .countdown {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            
+            .countdown-item {
+                min-width: 100px;
+                padding: 1rem;
+            }
+            
+            .countdown-number {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .coming-soon h1 {
+                font-size: 2rem;
+            }
+            
+            .coming-soon p {
+                font-size: 1rem;
+            }
+            
+            .countdown-item {
+                min-width: 80px;
+                padding: 0.8rem;
+            }
+            
+            .countdown-number {
+                font-size: 1.5rem;
+            }
+            
+            .logo-text {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="coming-soon">
+            <div class="decoration decoration-1"></div>
+            <div class="decoration decoration-2"></div>
+            
+            <div class="logo">
+                <div class="logo-text">AMUMA-PSK</div>
+                <div class="logo-tagline">Dignity and sustainability for every family</div>
+            </div>
+            
+            <h1>Our Website is Coming Soon</h1>
+            <p>We're working hard to bring you a new experience. Amuma-PSK is dedicated to providing educational opportunities for underprivileged children, breaking the cycle of poverty through education.</p>
+            
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">30</span>
+                    <span class="countdown-text">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">24</span>
+                    <span class="countdown-text">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">60</span>
+                    <span class="countdown-text">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">60</span>
+                    <span class="countdown-text">Seconds</span>
+                </div>
+            </div>
+            
+            <form class="email-form">
+                <input type="email" class="email-input" placeholder="Enter your email for updates" required>
+                <button type="submit" class="submit-btn">Notify Me</button>
+            </form>
+            
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+            <div class="contact-info">
+                <p>Need more information? Contact us at <a href="mailto:info@amuma-psk.org">info@amuma-psk.org</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Countdown Timer
+        const countdown = () => {
+            // Set the launch date to July 1, 2025
+            const launchDate = new Date('July 1, 2025 00:00:00');
+            
+            const currentTime = new Date().getTime();
+            const distance = launchDate - currentTime;
+            
+            // Time calculations
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Display the results
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+        };
+        
+        // Run countdown immediately and then every second
+        countdown();
+        setInterval(countdown, 1000);
+        
+        // Form submission - can be modified to handle actual form submission
+        document.querySelector('.email-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.querySelector('.email-input').value;
+            alert(`Thank you! We'll notify ${email} when we launch.`);
+            document.querySelector('.email-input').value = '';
+        });
+    </script>
+</body>
+</html>
