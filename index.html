@@ -29,11 +29,12 @@
             line-height: 1.6;
             color: var(--dark);
             background: linear-gradient(135deg, rgba(228, 192, 28, 0.05) 0%, rgba(108, 178, 67, 0.05) 100%);
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             overflow-x: hidden;
+            padding: 2rem 0;
         }
         
         .container {
@@ -50,11 +51,11 @@
             box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
             padding: 4rem 2rem;
             position: relative;
-            overflow: hidden;
+            overflow: visible;
         }
         
         .logo {
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
         }
         
         .logo-text {
@@ -69,14 +70,20 @@
             color: var(--secondary);
         }
         
+        .main-title {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
         .coming-soon h1 {
             font-size: 3.5rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
             color: var(--dark);
-            padding: 0.5rem 0;
-            position: relative;
             display: inline-block;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 1rem;
         }
         
         .coming-soon h1:after {
@@ -85,7 +92,7 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 100px;
+            width: 120px;
             height: 4px;
             background-color: var(--primary);
             border-radius: 2px;
@@ -267,10 +274,17 @@
             background-color: rgba(108, 178, 67, 0.1);
         }
         
+        .section-heading {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            color: var(--dark);
+        }
+        
         @media (max-width: 768px) {
             .coming-soon h1 {
                 font-size: 2.8rem;
-                margin-top: 1rem;
             }
             
             .countdown {
@@ -327,7 +341,10 @@
                 <div class="logo-tagline">Dignity and sustainability for every family</div>
             </div>
             
-            <h1>Hope in Action</h1>
+            <div class="main-title">
+                <h1>Hope in Action</h1>
+            </div>
+            
             <p>For over 40 years, Amuma-PSK (Pagtabang sa Kabus na Sugboanon) has been serving vulnerable communities in Cebu, Philippines. We bring hope in action by building dignity and sustainability for families through education, nutrition, healthcare, and community empowerment.</p>
             
             <div class="approach">
@@ -345,7 +362,7 @@
                 </div>
             </div>
             
-            <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">Our New Website Coming Soon</h2>
+            <h2 class="section-heading">Our New Website Coming Soon</h2>
             
             <div class="countdown">
                 <div class="countdown-item">
