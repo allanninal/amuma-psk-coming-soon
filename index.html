@@ -70,17 +70,33 @@
         }
         
         .coming-soon h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
             color: var(--dark);
+            padding: 0.5rem 0;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .coming-soon h1:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: var(--primary);
+            border-radius: 2px;
         }
         
         .coming-soon p {
             font-size: 1.2rem;
             color: #666;
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto 3rem;
+            line-height: 1.8;
         }
 
         .approach {
@@ -253,7 +269,8 @@
         
         @media (max-width: 768px) {
             .coming-soon h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
+                margin-top: 1rem;
             }
             
             .countdown {
@@ -277,7 +294,7 @@
         
         @media (max-width: 576px) {
             .coming-soon h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
             
             .coming-soon p {
