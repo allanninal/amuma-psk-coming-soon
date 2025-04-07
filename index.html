@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amuma-PSK | Hope in Action</title>
-    <meta name="description" content="Amuma-PSK (Pagtabang sa Kabus na Sugboanon) brings hope in action by building dignity and sustainability for families through our A.I.R. approach: Addressing immediate needs, Integrating comprehensive solutions, and Reinforcing community resilience.">
+    <title>Amuma-PSK | Transforming Lives in Cebu</title>
+    <meta name="description" content="Paglaum Sakinabuhi (PSK) provides transformative opportunities for marginalized children and families in Cebu, Philippines through education, spiritual growth, and community building.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -49,13 +49,13 @@
             background-color: var(--light);
             border-radius: 20px;
             box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
-            padding: 4rem 2rem;
+            padding: 3rem 2rem;
             position: relative;
             overflow: visible;
         }
         
         .logo {
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
         }
         
         .logo-text {
@@ -71,9 +71,9 @@
         }
         
         .main-title {
-            margin-top: 3rem;
-            margin-bottom: 3rem;
+            margin: 2rem 0;
             position: relative;
+            padding-bottom: 1.5rem;
         }
         
         .coming-soon h1 {
@@ -81,12 +81,10 @@
             font-weight: 700;
             color: var(--dark);
             display: inline-block;
-            margin-bottom: 1rem;
-            position: relative;
-            padding-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
         
-        .coming-soon h1:after {
+        .main-title:after {
             content: '';
             position: absolute;
             bottom: 0;
@@ -102,50 +100,129 @@
             font-size: 1.2rem;
             color: #666;
             max-width: 800px;
-            margin: 0 auto 3rem;
+            margin: 0 auto 2rem;
             line-height: 1.8;
         }
-
-        .approach {
+        
+        .mission-vision {
             display: flex;
-            justify-content: center;
-            margin-bottom: 3rem;
-            gap: 1.5rem;
             flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            justify-content: center;
         }
         
-        .approach-item {
+        .mission-box, .vision-box {
             background-color: var(--gray);
-            color: var(--dark);
             border-radius: 15px;
             padding: 1.5rem;
-            width: 30%;
-            min-width: 250px;
+            width: calc(50% - 0.75rem);
+            min-width: 280px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: left;
+        }
+        
+        .mission-box h3, .vision-box h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
+            justify-content: center;
+        }
+        
+        .project-box {
+            background-color: var(--gray);
+            border-radius: 15px;
+            padding: 1.5rem;
+            width: calc(33.333% - 1rem);
+            min-width: 280px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: left;
             transition: all 0.3s ease;
         }
         
-        .approach-item:hover {
+        .project-box:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-
-        .approach-title {
+        
+        .project-box h3 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
             font-size: 1.5rem;
             font-weight: 600;
-            margin-bottom: 1rem;
-            color: var(--secondary);
         }
         
-        .approach-text {
+        .project-box p {
             font-size: 0.9rem;
             line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        
+        .values {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            justify-content: center;
+        }
+        
+        .value-box {
+            background-color: var(--light);
+            border: 2px solid var(--primary);
+            border-radius: 10px;
+            padding: 1rem;
+            width: calc(33.333% - 0.667rem);
+            min-width: 200px;
+        }
+        
+        .value-box h4 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .value-box p {
+            font-size: 0.85rem;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .section-heading {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-heading:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary);
+            border-radius: 1.5px;
         }
         
         .countdown {
             display: flex;
             justify-content: center;
-            margin-bottom: 3rem;
+            margin: 2rem 0;
             gap: 2rem;
         }
         
@@ -172,7 +249,7 @@
         
         .email-form {
             max-width: 500px;
-            margin: 0 auto 3rem;
+            margin: 2rem auto;
             position: relative;
         }
         
@@ -214,7 +291,7 @@
             display: flex;
             justify-content: center;
             gap: 1rem;
-            margin-bottom: 2rem;
+            margin: 2rem 0;
         }
         
         .social-link {
@@ -239,6 +316,7 @@
         .contact-info {
             font-size: 0.9rem;
             color: #777;
+            margin-top: 1rem;
         }
         
         .contact-info a {
@@ -274,14 +352,6 @@
             background-color: rgba(108, 178, 67, 0.1);
         }
         
-        .section-heading {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            color: var(--dark);
-        }
-        
         @media (max-width: 768px) {
             .coming-soon h1 {
                 font-size: 2.8rem;
@@ -300,9 +370,13 @@
             .countdown-number {
                 font-size: 2rem;
             }
-
-            .approach-item {
+            
+            .mission-box, .vision-box, .project-box {
                 width: 100%;
+            }
+            
+            .value-box {
+                width: calc(50% - 0.5rem);
             }
         }
         
@@ -327,6 +401,10 @@
             .logo-text {
                 font-size: 2rem;
             }
+            
+            .value-box {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -338,31 +416,62 @@
             
             <div class="logo">
                 <div class="logo-text">AMUMA-PSK</div>
-                <div class="logo-tagline">Dignity and sustainability for every family</div>
+                <div class="logo-tagline">Transforming lives in Cebu since 2019</div>
             </div>
             
             <div class="main-title">
                 <h1>Hope in Action</h1>
             </div>
             
-            <p>For over 40 years, Amuma-PSK (Pagtabang sa Kabus na Sugboanon) has been serving vulnerable communities in Cebu, Philippines. We bring hope in action by building dignity and sustainability for families through education, nutrition, healthcare, and community empowerment.</p>
+            <p>Founded by the Apostolic Sisters of St. John (ASSJ) in Cebu, Philippines, Paglaum Sakinabuhi (PSK) began as a mission to serve marginalized families in Banawa Hills. From addressing hunger to holistic development, we've evolved to meet both spiritual and material needs of children and families.</p>
             
-            <div class="approach">
-                <div class="approach-item">
-                    <div class="approach-title">Addressing</div>
-                    <div class="approach-text">Identifying and addressing immediate needs in education, nutrition, and healthcare for vulnerable families.</div>
+            <div class="mission-vision">
+                <div class="mission-box">
+                    <h3>Our Mission</h3>
+                    <p>To provide transformative opportunities for marginalized children and their families, fostering holistic change through education, spiritual growth, and community building.</p>
                 </div>
-                <div class="approach-item">
-                    <div class="approach-title">Integrating</div>
-                    <div class="approach-text">Integrating comprehensive solutions that build stability and create sustainable livelihoods for families.</div>
-                </div>
-                <div class="approach-item">
-                    <div class="approach-title">Reinforcing</div>
-                    <div class="approach-text">Reinforcing community resilience through leadership development, advocacy, and empowerment initiatives.</div>
+                <div class="vision-box">
+                    <h3>Our Vision</h3>
+                    <p>To inspire, equip, and empower marginalized children and their families, helping them thrive as responsible members of a community rooted in Christ.</p>
                 </div>
             </div>
             
-            <h2 class="section-heading">Our New Website Coming Soon</h2>
+            <h3 class="section-heading">Our Core Values</h3>
+            <div class="values">
+                <div class="value-box">
+                    <h4>Faith</h4>
+                    <p>A personal response to God that cultivates trust in others.</p>
+                </div>
+                <div class="value-box">
+                    <h4>Compassion</h4>
+                    <p>Being moved by the suffering of others and taking action to help them.</p>
+                </div>
+                <div class="value-box">
+                    <h4>Growth</h4>
+                    <p>Embracing challenges, learning from experiences, and consistently pursuing opportunities to enhance skills and knowledge.</p>
+                </div>
+            </div>
+            
+            <h3 class="section-heading">Our 2025-2031 Projects</h3>
+            <div class="projects">
+                <div class="project-box">
+                    <h3>AMUMA Project</h3>
+                    <p>A character building project focused on spiritual and human formation to cultivate strong values and growth in Catholic faith.</p>
+                    <p><strong>Programs:</strong> Faith Forward, Seeds of Greatness, Grow and Flourish</p>
+                </div>
+                <div class="project-box">
+                    <h3>I CAN Project</h3>
+                    <p>Educational development and advancement opportunities through scholarships, literacy programs, and specialized training.</p>
+                    <p><strong>Programs:</strong> Hope for Tomorrow, Engage and Explore, Lead and Prosper</p>
+                </div>
+                <div class="project-box">
+                    <h3>RISE UP Project</h3>
+                    <p>Capacity building for economic growth and stability through personal and professional development, vocational training, and social business initiatives.</p>
+                    <p><strong>Programs:</strong> Skills Up, Build Up, Thrive Up, Ground Up</p>
+                </div>
+            </div>
+            
+            <h3 class="section-heading">Our New Website Coming Soon</h3>
             
             <div class="countdown">
                 <div class="countdown-item">
@@ -383,6 +492,8 @@
                 </div>
             </div>
             
+            <p style="margin-top:2rem; font-style:italic;">"Together, we have the opportunity to make a lasting impact. By working hand in hand, we can overcome challenges, seize opportunities, and build a stronger, more compassionate community."</p>
+            
             <form class="email-form">
                 <input type="email" class="email-input" placeholder="Enter your email for updates" required>
                 <button type="submit" class="submit-btn">Notify Me</button>
@@ -397,6 +508,7 @@
             
             <div class="contact-info">
                 <p>Need more information? Contact us at <a href="mailto:info@amuma-psk.org">info@amuma-psk.org</a></p>
+                <p style="margin-top:0.5rem;">PSK Cebu Mission is possible and it will start with you. Will you give PSK Cebu a chance?</p>
             </div>
         </div>
     </div>
